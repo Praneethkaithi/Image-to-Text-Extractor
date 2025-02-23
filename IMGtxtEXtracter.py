@@ -10,6 +10,10 @@ def extract_text_from_image(image_path):
     image = Image.open(image_path)
     text = pytesseract.image_to_string(image)
     return text
+# test_example.py
+
+def test_addition():
+    assert 1 + 1 == 2
 
 def open_file():
     file_path = filedialog.askopenfilename(filetypes=[("Image files", "*.png;*.jpg;*.jpeg;*.bmp;*.tiff"), ("All files", "*.*")])
